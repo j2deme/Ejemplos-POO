@@ -5,6 +5,11 @@ from persona import Persona
 
 
 def main():
+    """
+    Función principal del programa.
+    Realiza la carga de tareas y personas, muestra un menú de opciones y ejecuta las acciones correspondientes
+    hasta que se seleccione la opción de salir.
+    """
     tareas = cargar_tareas()
     personas = cargar_personas()
 
@@ -72,6 +77,12 @@ def main():
 
 
 def menu():
+    """
+    Muestra el menú principal y solicita al usuario que ingrese una opción válida.
+
+    Returns:
+        int: La opción seleccionada por el usuario.
+    """
     # Limpiamos la pantalla
     os.system("cls")
     print("MENU PRINCIPAL")
@@ -94,6 +105,11 @@ def menu():
 
 
 def guardar_tareas(tareas):
+    """
+    Guarda las tareas en un archivo binario utilizando el módulo pickle.
+
+    :param tareas: Lista de tareas a guardar.
+    """
     directorio = os.path.dirname(__file__)
     archivo_destino = os.path.join(directorio, "tareas.bin")
     with open(archivo_destino, "wb") as archivo:
@@ -101,6 +117,12 @@ def guardar_tareas(tareas):
 
 
 def cargar_tareas():
+    """
+    Carga las tareas desde un archivo binario y las devuelve como una lista.
+
+    Returns:
+        list: Lista de tareas cargadas desde el archivo binario.
+    """
     directorio = os.path.dirname(__file__)
     archivo_origen = os.path.join(directorio, "tareas.bin")
     try:
@@ -113,6 +135,12 @@ def cargar_tareas():
 
 
 def guardar_personas(personas):
+    """
+    Guarda una lista de personas en un archivo binario utilizando el módulo pickle.
+
+    Args:
+        personas (list): La lista de personas a guardar.
+    """
     directorio = os.path.dirname(__file__)
     archivo_destino = os.path.join(directorio, "personas.bin")
     with open(archivo_destino, "wb") as archivo:
@@ -120,6 +148,12 @@ def guardar_personas(personas):
 
 
 def cargar_personas():
+    """
+    Carga una lista de personas desde un archivo binario.
+
+    Returns:
+        list: La lista de personas cargada desde el archivo.
+    """
     directorio = os.path.dirname(__file__)
     archivo_origen = os.path.join(directorio, "personas.bin")
     try:
