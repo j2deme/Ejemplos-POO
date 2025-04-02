@@ -1,6 +1,6 @@
-# POO (Agosto - Diciembre 2023)
+# Ejemplos de los conceptos de POO
 
-En este repositorio se encuentran los ejercicios y ejemplos realizados en la materia de Programación Orientada a Objetos (POO) en el semestre Agosto - Diciembre 2023.
+En este repositorio se encuentran los ejercicios y ejemplos realizados en la materia de Programación Orientada a Objetos (POO).
 
 Se incluyen ejemplos de los temas:
 
@@ -12,4 +12,4 @@ Se incluyen ejemplos de los temas:
 - Manejo de Excepciones
 - Streams y Archivos
 
-El lenguaje de programación utilizado es **Python**.
+Los ejemplos están desarrollados en **Python**, pero la idea puede aplicarse para cualquier lenguaje de programación.
