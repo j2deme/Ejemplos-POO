@@ -3,6 +3,8 @@ from raichu import Raichu
 from bulbasaur import Bulbasaur
 from charmander import Charmander
 
+from fuego import TipoFuego
+
 
 def main():
     pika = Pikachu()
@@ -16,6 +18,10 @@ def main():
 
     char = Charmander()
     print(char)
+
+    fuego = TipoFuego("Charmeleon", 80, 90)
+    print(fuego)
+
 
 if __name__ == "__main__":
     main()
